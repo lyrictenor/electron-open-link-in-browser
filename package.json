@@ -1,0 +1,45 @@
+{
+  "name": "electron-open-link-in-browser",
+  "description": "My spectacular module",
+  "version": "0.0.0",
+  "author": {
+    "name": "sanemat",
+    "email": "o.gata.ken@gmail.com",
+    "url": "sane.jp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "conventional-changelog": "*",
+    "eclint": "*",
+    "eslint": "*",
+    "espower-loader": "*",
+    "fixpack": "*",
+    "globstar": "*",
+    "mocha": "*",
+    "npm-check-updates": "*",
+    "power-assert": "*",
+    "touch": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "repository": "sanemat/electron-open-link-in-browser",
+  "scripts": {
+    "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
+    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
+    "eslint": "eslint .",
+    "fixpack": "fixpack",
+    "git:tag": "git tag v${npm_package_version}",
+    "lint": "npm run eclint && npm run eslint",
+    "ncu": "ncu -ua",
+    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
+    "verify": "npm run lint && npm run test"
+  }
+}

@@ -1,0 +1,34 @@
+# http://www.appveyor.com/docs/appveyor-yml
+
+# init
+clone_depth: 20
+
+environment:
+  matrix:
+  - nodejs_version: 0.12
+  - nodejs_version: 3
+
+# install
+install:
+- ps: . .\Execute-With-Retry
+- ps: Execute-With-Retry { Update-NodeJsInstallation ( Execute-With-Retry { Get-NodeJsLatestBuild $env:nodejs_version } ) }
+- node --version
+- npm --version
+- windows_retry npm install
+
+# build
+build: off
+
+# test
+test_script:
+- npm run verify
+
+# deploy
+deploy: off
+
+# notify
+notifications:
+- provider: Email
+  to:
+  - o.gata.ken@gmail.com
+  on_build_status_changed: true
