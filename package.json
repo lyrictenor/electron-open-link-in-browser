@@ -26,7 +26,9 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "atomshell",
+    "browser",
+    "electron"
   ],
   "license": "MIT",
   "repository": "lyrictenor/electron-open-link-in-browser",
