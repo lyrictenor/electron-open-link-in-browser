@@ -37,8 +37,8 @@
   "scripts": {
     "build:browser": "npm prune && npm dedupe && browserify -u shell --standalone electronOpenLinkInBrowser ./index.js > build/electron-open-link-in-browser.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint .",
+    "eclint": "globstar --ignore \"{node_modules,build}/**\" -- eclint check \"*.{js,yml,md,json}\"",
+    "eslint": "eslint index.js",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
