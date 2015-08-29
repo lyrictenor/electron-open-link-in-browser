@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "conventional-changelog": "^0.4.2",
+    "dereserve": "^0.1.1",
     "eclint": "^1.1.1",
     "eslint": "^1.3.0",
     "fixpack": "^2.2.0",
@@ -35,7 +36,7 @@
   "license": "MIT",
   "repository": "lyrictenor/electron-open-link-in-browser",
   "scripts": {
-    "build:browser": "npm prune && npm dedupe && browserify -u shell --standalone electronOpenLinkInBrowser ./index.js > build/electron-open-link-in-browser.js",
+    "build:browser": "npm prune && npm dedupe && browserify -u shell --standalone electronOpenLinkInBrowser ./index.js | dereserve > build/electron-open-link-in-browser.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "eclint": "globstar --ignore \"{node_modules,build}/**\" -- eclint check \"*.{js,yml,md,json}\"",
     "eslint": "eslint index.js",
