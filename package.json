@@ -8,6 +8,7 @@
     "url": "sane.jp"
   },
   "dependencies": {
+    "browserify": "^11.0.1",
     "is-electron-renderer": "^2.0.0"
   },
   "devDependencies": {
@@ -23,7 +24,8 @@
     "node": ">=0.10.0"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "build"
   ],
   "keywords": [
     "atomshell",
@@ -33,9 +35,10 @@
   "license": "MIT",
   "repository": "lyrictenor/electron-open-link-in-browser",
   "scripts": {
+    "build:browser": "npm prune && npm dedupe && browserify -u shell --standalone electronOpenLinkInBrowser ./index.js > build/electron-open-link-in-browser.js",
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
-    "eclint": "globstar --ignore \"node_modules/**\" -- eclint check \"*.{js,yml,md,json}\"",
-    "eslint": "eslint .",
+    "eclint": "globstar --ignore \"{node_modules,build}/**\" -- eclint check \"*.{js,yml,md,json}\"",
+    "eslint": "eslint index.js",
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
