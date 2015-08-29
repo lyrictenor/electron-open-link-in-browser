@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> My spectacular module
+> Open a link in browser for Electron and browser.
 
 
 ## Install
@@ -14,34 +14,57 @@ $ npm install --save electron-open-link-in-browser
 
 ## Usage
 
-```js
-var electronOpenLinkInBrowser = require('electron-open-link-in-browser');
+```html
+<script type="text/javascript" src="build/electron-open-link-in-browser.js"></script>
+<a
+  href="https://github.com/lyrictenor/nwjs-emoji-app"
+  onClick="electronOpenLinkInBrowser();"
+  >
+  github.com/lyrictenor/nwjs-emoji-app
+</a>
 
-electronOpenLinkInBrowser('unicorns');
-//=> unicorns & rainbows
+<button
+  type="button"
+  onclick="electronOpenLinkInBrowser('http://example.com');"
+  >
+  Example.com
+</button>
 ```
 
+### React.js + JSX + Browserify/Webpack
+
+```html
+var electronOpenLinkInBrowser = require("electron-open-link-in-browser");
+
+<a
+  href="https://github.com/lyrictenor/nwjs-emoji-app"
+  onClick={electronOpenLinkInBrowser.bind(this)}
+  >
+  github.com/lyrictenor/nwjs-emoji-app
+</a>
+
+<button
+  type="button"
+  onClick={electronOpenLinkInBrowser.bind(this, "http://example.com")}
+  >
+  Example.com
+</button>
+```
 
 
 ## API
 
-### electronOpenLinkInBrowser(input, [options])
+### electronOpenLinkInBrowser([url,] event)
 
-#### input
+Jump to the href property.
 
-*Required*  
+#### url
+
+*Optional*
+
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
+Jump to url.
 
 
 ## Changelog

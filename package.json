@@ -1,6 +1,6 @@
 {
   "name": "electron-open-link-in-browser",
-  "description": "My spectacular module",
+  "description": "Open a link in browser for Electron and browser.",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
