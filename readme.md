@@ -54,11 +54,11 @@ Lorem ipsum.
 MIT © [sanemat](http://sane.jp)
 
 
-[travis-url]: https://travis-ci.org/sanemat/electron-open-link-in-browser
-[travis-image]: https://img.shields.io/travis/sanemat/electron-open-link-in-browser/master.svg?style=flat-square&label=travis
+[travis-url]: https://travis-ci.org/lyrictenor/electron-open-link-in-browser
+[travis-image]: https://img.shields.io/travis/lyrictenor/electron-open-link-in-browser/master.svg?style=flat-square&label=travis
 [appveyor-url]: https://ci.appveyor.com/project/sanemat/electron-open-link-in-browser/branch/master
 [appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/electron-open-link-in-browser/master.svg?style=flat-square&label=appveyor
 [npm-url]: https://npmjs.org/package/electron-open-link-in-browser
 [npm-image]: https://img.shields.io/npm/v/electron-open-link-in-browser.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/sanemat/electron-open-link-in-browser
-[daviddm-image]: https://img.shields.io/david/sanemat/electron-open-link-in-browser.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/lyrictenor/electron-open-link-in-browser
+[daviddm-image]: https://img.shields.io/david/lyrictenor/electron-open-link-in-browser.svg?style=flat-square
