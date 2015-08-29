@@ -25,10 +25,10 @@ $ npm install --save electron-open-link-in-browser
 ```html
 <script type="text/javascript" src="build/electron-open-link-in-browser.js"></script>
 <a
-  href="https://github.com/lyrictenor/nwjs-emoji-app"
+  href="https://github.com/lyrictenor/electron-triage-for-github"
   onClick="electronOpenLinkInBrowser();"
   >
-  github.com/lyrictenor/nwjs-emoji-app
+  github.com/lyrictenor/electron-triage-for-github
 </a>
 
 <button
@@ -45,10 +45,10 @@ $ npm install --save electron-open-link-in-browser
 var electronOpenLinkInBrowser = require("electron-open-link-in-browser");
 
 <a
-  href="https://github.com/lyrictenor/nwjs-emoji-app"
+  href="https://github.com/lyrictenor/electron-triage-for-github"
   onClick={electronOpenLinkInBrowser.bind(this)}
   >
-  github.com/lyrictenor/nwjs-emoji-app
+  github.com/lyrictenor/electron-triage-for-github
 </a>
 
 <button
