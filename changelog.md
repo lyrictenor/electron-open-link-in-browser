@@ -1,3 +1,9 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/lyrictenor/electron-open-link-in-browser/compare/v1.0.0...v1.0.1) (2015-08-29)
+
+* Improve readme
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/lyrictenor/electron-open-link-in-browser/compare/v0.0.1...v1.0.0) (2015-08-29)
 
