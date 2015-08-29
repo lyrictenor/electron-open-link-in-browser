@@ -1,10 +1,22 @@
 'use strict';
-module.exports = function (str, opts) {
-  if (typeof str !== 'string') {
-    throw new TypeError('Expected a string');
+
+var isElectronRenderer = require('is-electron-renderer');
+
+module.exports = function (url, event) {
+  if(isElectronRenderer) {
+    var shell = require('shell');
+    if (url && url.preventDefault) {
+      event = url;
+      event.preventDefault();
+      shell.openExternal(event.target.href);
+    } else {
+      event.preventDefault();
+      shell.openExternal(url);
+    }
+  } else {
+    if (url && !url.preventDefault) {
+      event.preventDefault();
+      window.location.href = url;
+    }
   }
-
-  opts = opts || {};
-
-  return str + ' & ' + (opts.postfix || 'rainbows');
 };
