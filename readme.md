@@ -4,6 +4,14 @@
 
 > Open a link in browser for Electron and browser.
 
+#### Electron app to browser
+
+![Electron to browser](https://cloud.githubusercontent.com/assets/75448/9560922/626a5610-4e6a-11e5-9a1f-af9c2cd43f38.gif)
+
+#### browser to browser
+
+![browser to browser](https://cloud.githubusercontent.com/assets/75448/9560923/6a926ba2-4e6a-11e5-84ff-3be91ad410d3.gif)
+
 
 ## Install
 
