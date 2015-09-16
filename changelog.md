@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/lyrictenor/electron-open-link-in-browser/compare/v1.0.1...v1.0.2) (2015-09-16)
+
+* Remove browserify from dependency
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/lyrictenor/electron-open-link-in-browser/compare/v1.0.0...v1.0.1) (2015-08-29)
 
