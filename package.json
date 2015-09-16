@@ -8,10 +8,10 @@
     "url": "sane.jp"
   },
   "dependencies": {
-    "browserify": "^11.0.1",
     "is-electron-renderer": "^2.0.0"
   },
   "devDependencies": {
+    "browserify": "^11.1.0",
     "conventional-changelog": "^0.4.2",
     "dereserve": "^0.1.1",
     "eclint": "^1.1.1",
