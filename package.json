@@ -1,7 +1,7 @@
 {
   "name": "electron-open-link-in-browser",
   "description": "Open a link in browser for Electron and browser.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com",
