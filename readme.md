@@ -1,5 +1,9 @@
 # electron-open-link-in-browser
 
+**NOTE: This package is no longer necessary as this feature is now built into Electron, via the following API:**
+
+    require("shell").openExternal("http://duckduckgo.com")
+
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
 > Open a link in browser for Electron and browser.
